@@ -5,12 +5,15 @@ const userRoutes = require('./routes/userRoutes');
 const app = express();
 app.use(express.json());
 
-// Routes
+// Add temporarily to server.js
+
+
+
+
 app.use('/', userRoutes);
 
-// Connect DB and start server
 connectDB();
 const PORT = 3000;
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
