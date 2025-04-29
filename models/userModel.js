@@ -11,8 +11,5 @@ const userSchema = new mongoose.Schema({
         required: true
     }
 });
-
-// Explicitly name the collection as 'usersdata'
 const User = mongoose.model('User', userSchema, 'usersdata');
-
 module.exports = User;
